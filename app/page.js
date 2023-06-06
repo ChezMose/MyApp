@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -28,16 +29,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Link
+        className={styles.center}
+        href="/page2"
+      >
+        Go to page 2
+      </Link>
+
 
       <div className={styles.grid}>
         <a
