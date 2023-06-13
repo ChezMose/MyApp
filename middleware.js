@@ -19,7 +19,7 @@ const getLocale = (request) => {
 }
 
 /* ----------------------------------------
-  The middleware
+  Redirect if there is no locale in the path
 ---------------------------------------- */
 export const middleware = (request) => {
   // get the pathname
@@ -41,7 +41,7 @@ export const middleware = (request) => {
 };
 
 /* ----------------------------------------
-  Matcher ignored path
+  Matcher for ignored path
 ---------------------------------------- */
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`

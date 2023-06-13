@@ -3,8 +3,9 @@ import SelectLang from '/components/SelectLang';
 
 
 /* ------------------------------------------------
-  Try 3) Using this layout with a parent layout.js in the /app folder root containing the IntercomClientProvider
-  
+  Try 5) Using this layout with a parent layout.js in the /app folder root containing the IntercomClientProvider
+  Uses a custom intercom widget component
+
   => DOES ALMOST WORK
   
   The intercom widget shows up

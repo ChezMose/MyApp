@@ -1,9 +1,8 @@
-import './globals.css'
-import SelectLang from '/components/SelectLang';
+import IntercomClientProvider from '/components/IntercomClientProvider';
 
 
 /* ------------------------------------------------
-  Try 3) Using this layout with a parent layout.js in the /app folder root containing the IntercomClientProvider
+  Try 3) Using this layout with a child layout.js in the [lang] folder
   
   => DOES ALMOST WORK
   
@@ -15,11 +14,13 @@ const RootLayout = ({
   params: { lang },
   children
 }) => (
-  <>
-    <SelectLang />
-    {children}
-  </>
+  <html lang={lang}>
+    <body>
+      <IntercomClientProvider>
+        {children}
+      </IntercomClientProvider>
+    </body>
+  </html>
 );
-
 
 export default RootLayout;

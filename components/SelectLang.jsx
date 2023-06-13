@@ -14,12 +14,12 @@ import styles from './SelectLang.module.css';
   Redirect to given pathname with given locale
 ------------------------------------------ */
 const toLocalPath = (pathname, locale) => {
-  // if no pathname, go home
-  if (!pathname)
-    return '/';
   // if no locale, keep as-is
   if (!locale)
     return pathname;
+  // if no pathname, go home
+  if (!pathname || pathname === '')
+    return '/' + locale;
 
   // split the pathname
   const segments = pathname.split('/');
@@ -53,7 +53,6 @@ const SelectLang = () => {
     if (locale !== lang) {
       // switch lang
       router.push(toLocalPath(pathname, locale));
-      // TODO: store it as well ??
     }
   };
 

@@ -6,7 +6,7 @@ import { useParams } from 'next/navigation';
 import styles from './ShowLang.module.css';
 
 /* ------------------------------------------
-  Language selection
+  Display current language
 ------------------------------------------ */
 const ShowLang = () => {
   // get the current lang

@@ -3,7 +3,7 @@ import ShowLang from '/components/ShowLang'
 import NavWithRouter from '/components/NavWithRouter'
 import styles from '../page.module.css'
 
-export default function Page2() {
+export default function Page3() {
   return (
     <main className={styles.main}>
 
