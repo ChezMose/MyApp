@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ShowLang from '/components/ShowLang'
 import styles from '../page.module.css'
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
         <div className={styles.card}>
           This is another page
         </div>
+        <ShowLang />
       </div>
     </main>
   )

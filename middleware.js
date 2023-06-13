@@ -2,15 +2,8 @@
 import { NextResponse } from 'next/server'
 import Negotiator from 'negotiator'
 import { match as matchLocale } from '@formatjs/intl-localematcher'
+import { locales, localeDefault } from 'tools/loca';
 
-/* ---------------------
-  All available locales
---------------------- */
-export const locales = ['en', 'fr'];
-/* ---------------------
-  Default locale
---------------------- */
-export const localeDefault = 'en';
 
 /* ----------------------------------------
   Infer the locale

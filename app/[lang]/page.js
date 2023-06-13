@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ShowLang from '/components/ShowLang'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -35,6 +36,7 @@ export default function Home() {
       >
         Go to page 2
       </Link>
+      <ShowLang />
 
 
       <div className={styles.grid}>

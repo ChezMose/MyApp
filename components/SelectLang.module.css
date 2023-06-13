@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  list-style: none;
+  padding: 20px;
+}
+
+
+.list li button {
+  text-transform: uppercase;
+  padding: 5px;
+}
